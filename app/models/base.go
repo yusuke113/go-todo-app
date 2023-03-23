@@ -18,6 +18,7 @@ var err error
 const (
 	tableNameUser = "users" // ユーザーテーブルの名前
 	tableNameTodo = "todos" // TODOテーブルの名前
+	tableNameSession = "sessions" // TODOテーブルの名前
 )
 
 func init() {
@@ -26,12 +27,12 @@ func init() {
 		log.Fatalln(err)
 	}
 
-	cmdU := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s( // SQL文を作成
-		id INTEGER PRIMARY KEY AUTOINCREMENT, // ID（自動採番）
-		uuid STRING NOT NULL UNIQUE, // UUID（ユニークかつNULL不可）
-		name STRING, // 名前
-		email STRING, // メールアドレス
-		password STRING, // パスワード
+	cmdU := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		uuid STRING NOT NULL UNIQUE,
+		name STRING,
+		email STRING,
+		password STRING,
 		created_at DATETIME)`, tableNameUser) // 作成日時
 
 	Db.Exec(cmdU) // SQL文を実行
@@ -43,6 +44,15 @@ func init() {
 		created_at DATETIME)`, tableNameTodo)
 
 	Db.Exec(cmdT) // SQL文を実行
+
+	cmdS := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		uuid STRING NOT NULL UNIQUE,
+		email STRING,
+		user_id INTEGER,
+		created_at DATETIME)`, tableNameSession)
+
+	Db.Exec(cmdS)
 }
 
 func createUUID() (uuidobj uuid.UUID) { // UUIDを生成する関数

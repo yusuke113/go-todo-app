@@ -1,2 +1,911 @@
 2023/03/23 14:13:13 users.go:33: near "/": syntax error
 2023/03/23 14:14:52 todos.go:23: near "value": syntax error
+2023/03/23 17:15:50 users.go:33: no such table: users
+2023/03/23 17:21:59 users.go:33: no such table: users
+2023/03/23 17:31:45 server.go:3230: http: panic serving [::1]:60798: open app/views/templates/public_navber.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x140000963f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x140000ae2a0}, {0x0, 0x0}, {0x14000143a08?, 0x2, 0x14000143a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x140000ae2a0?}, 0x12ca2a83b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x14000143ad8?, {0x1051d2628?, 0x140000ae2a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x140000ae2a0}, 0x1400012a800)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400018e030?}, {0x1051d2628, 0x140000ae2a0}, 0x1400012a800)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000114f00, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:45 server.go:3230: http: panic serving [::1]:60800: open app/views/templates/public_navber.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x14000306270})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400032e0e0}, {0x0, 0x0}, {0x140000b5a08?, 0x2, 0x140000b5a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400032e0e0?}, 0x12ca2a63b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x140000b5ad8?, {0x1051d2628?, 0x1400032e0e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400032e0e0}, 0x1400019a200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140000962a0?}, {0x1051d2628, 0x1400032e0e0}, 0x1400019a200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000c8000, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:45 server.go:3230: http: panic serving [::1]:60801: open app/views/templates/public_navber.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x14000096480})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x140000ae380}, {0x0, 0x0}, {0x140000bba08?, 0x2, 0x140000bba18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x140000ae380?}, 0x12ca2a53b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x140000bbad8?, {0x1051d2628?, 0x140000ae380?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x140000ae380}, 0x1400031a100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140000961b0?}, {0x1051d2628, 0x140000ae380}, 0x1400031a100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000c80a0, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:45 server.go:3230: http: panic serving [::1]:60799: open app/views/templates/public_navber.html: no such file or directory
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x140002accf0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400016e460}, {0x0, 0x0}, {0x140000b9a08?, 0x2, 0x140000b9a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400016e460?}, 0x12ca2a73b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x140000b9ad8?, {0x1051d2628?, 0x1400016e460?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400016e460}, 0x1400031a000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007f410?}, {0x1051d2628, 0x1400016e460}, 0x1400031a000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000114fa0, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:45 server.go:3230: http: panic serving [::1]:60830: open app/views/templates/public_navber.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x140003063f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400032e1c0}, {0x0, 0x0}, {0x14000182a08?, 0x2, 0x14000182a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400032e1c0?}, 0x12ca2a73b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x14000182ad8?, {0x1051d2628?, 0x1400032e1c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400032e1c0}, 0x1400031a400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000306330?}, {0x1051d2628, 0x1400032e1c0}, 0x1400031a400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140003140a0, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:46 server.go:3230: http: panic serving [::1]:60835: open app/views/templates/public_navber.html: no such file or directory
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x14000306510})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400032e2a0}, {0x0, 0x0}, {0x14000182a08?, 0x2, 0x14000182a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400032e2a0?}, 0x12ca2a73b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x14000182ad8?, {0x1051d2628?, 0x1400032e2a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400032e2a0}, 0x1400031a500)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000306450?}, {0x1051d2628, 0x1400032e2a0}, 0x1400031a500)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000c8140, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:46 server.go:3230: http: panic serving [::1]:60836: open app/views/templates/public_navber.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x14000306600})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400032e380}, {0x0, 0x0}, {0x1400005ca08?, 0x2, 0x1400005ca18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400032e380?}, 0x12ca2a53b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1051d2628?, 0x1400032e380?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400032e380}, 0x140000b2600)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000096600?}, {0x1051d2628, 0x1400032e380}, 0x140000b2600)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000c81e0, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:46 server.go:3230: http: panic serving [::1]:60837: open app/views/templates/public_navber.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x140003067e0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400032e460}, {0x0, 0x0}, {0x1400005ca08?, 0x2, 0x1400005ca18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400032e460?}, 0x12ca2a53b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1051d2628?, 0x1400032e460?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400032e460}, 0x1400031a600)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000306720?}, {0x1051d2628, 0x1400032e460}, 0x1400031a600)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000314140, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:51 server.go:3230: http: panic serving [::1]:60858: open app/views/templates/public_navber.html: no such file or directory
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x1400018e870})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x140001bc0e0}, {0x0, 0x0}, {0x14000187a08?, 0x2, 0x14000187a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x140001bc0e0?}, 0x12ca2a53b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x14000187ad8?, {0x1051d2628?, 0x140001bc0e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x140001bc0e0}, 0x1400019a300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400018e7b0?}, {0x1051d2628, 0x140001bc0e0}, 0x1400019a300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140003141e0, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:51 server.go:3230: http: panic serving [::1]:60859: open app/views/templates/public_navber.html: no such file or directory
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x1400018e960})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x140001bc1c0}, {0x0, 0x0}, {0x1400005ca08?, 0x2, 0x1400005ca18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x140001bc1c0?}, 0x12ca2a73b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1051d2628?, 0x140001bc1c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x140001bc1c0}, 0x1400031a700)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000306900?}, {0x1051d2628, 0x140001bc1c0}, 0x1400031a700)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000314280, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:31:51 server.go:3230: http: panic serving [::1]:60860: open app/views/templates/public_navber.html: no such file or directory
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x1400018eb40})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x140001bc2a0}, {0x0, 0x0}, {0x1400005ca08?, 0x2, 0x1400005ca18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x140001bc2a0?}, 0x12ca2a73b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1051d2628?, 0x140001bc2a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x140001bc2a0}, 0x1400019a400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400018ea80?}, {0x1051d2628, 0x140001bc2a0}, 0x1400019a400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001ea0a0, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:32:21 server.go:3230: http: panic serving [::1]:60983: open app/views/templates/public_navber.html: no such file or directory
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x140000966c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x140000ae460}, {0x0, 0x0}, {0x14000187a08?, 0x2, 0x14000187a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x140000ae460?}, 0x12ca2a73b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x14000187ad8?, {0x1051d2628?, 0x140000ae460?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x140000ae460}, 0x1400019a600)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400018ecc0?}, {0x1051d2628, 0x140000ae460}, 0x1400019a600)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001ea140, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:32:21 server.go:3230: http: panic serving [::1]:60984: open app/views/templates/public_navber.html: no such file or directory
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x140003069c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400032e540}, {0x0, 0x0}, {0x1400005ca08?, 0x2, 0x1400005ca18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400032e540?}, 0x12ca2a53b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1051d2628?, 0x1400032e540?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400032e540}, 0x1400019a500)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400018ec60?}, {0x1051d2628, 0x1400032e540}, 0x1400019a500)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001ea1e0, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:32:21 server.go:3230: http: panic serving [::1]:60985: open app/views/templates/public_navber.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x105188200, 0x140002ace70})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x1051d2628?, 0x1400016e540}, {0x0, 0x0}, {0x14000061a08?, 0x2, 0x14000061a18?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:16 +0xd0
+go_todo_app/app/controllers.login({0x1051d2628?, 0x1400016e540?}, 0x12ca2a53b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_auth.go:31 +0x68
+net/http.HandlerFunc.ServeHTTP(0x14000061ad8?, {0x1051d2628?, 0x1400016e540?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1051d2628, 0x1400016e540}, 0x1400012a900)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140002acdb0?}, {0x1051d2628, 0x1400016e540}, 0x1400012a900)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000115180, {0x1051d2ac0, 0x1400007f2c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 17:55:53 users.go:104: near "value": syntax error
+2023/03/23 17:56:05 users.go:104: table sessions has no column named created_at
+2023/03/23 17:58:05 users.go:104: table sessions has no column named created_at
+2023/03/23 18:04:11 users.go:104: table sessions has no column named created_at
+2023/03/23 18:22:04 users.go:104: table sessions has no column named created_at
+2023/03/23 19:56:51 server.go:3230: http: panic serving [::1]:63494: template: index.html:1: unexpected "content" in define clause
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000320430})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a540}, {0x0, 0x0}, {0x140001739f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a540}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000173ad8?, {0x100656a08?, 0x1400022a540?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a540}, 0x14000250700)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x100656a08, 0x1400022a540}, 0x14000250700)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000138f00, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:51 server.go:3230: http: panic serving [::1]:63495: template: index.html:1: unexpected "content" in define clause
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000320600})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a620}, {0x0, 0x0}, {0x1400013f9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a620}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400013fad8?, {0x100656a08?, 0x1400022a620?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a620}, 0x1400009c200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d440?}, {0x100656a08, 0x1400022a620}, 0x1400009c200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000138fa0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:51 server.go:3230: http: panic serving [::1]:63599: template: index.html:1: unexpected "content" in define clause
+goroutine 49 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140003207e0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a700}, {0x0, 0x0}, {0x1400005d9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a700}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400005dad8?, {0x100656a08?, 0x1400022a700?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a700}, 0x14000250800)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400035e240?}, {0x100656a08, 0x1400022a700}, 0x14000250800)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002d2140, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63604: template: index.html:1: unexpected "content" in define clause
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140003209d0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a7e0}, {0x0, 0x0}, {0x140003769f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a7e0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000376ad8?, {0x100656a08?, 0x1400022a7e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a7e0}, 0x14000250a00)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400035e870?}, {0x100656a08, 0x1400022a7e0}, 0x14000250a00)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002d21e0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63605: template: index.html:1: unexpected "content" in define clause
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x1400011b290})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400019c1c0}, {0x0, 0x0}, {0x1400005d9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400019c1c0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400005dad8?, {0x100656a08?, 0x1400019c1c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400019c1c0}, 0x14000250900)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400035e810?}, {0x100656a08, 0x1400019c1c0}, 0x14000250900)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002d2280, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63606: template: index.html:1: unexpected "content" in define clause
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000012200})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa000}, {0x0, 0x0}, {0x140000629f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa000}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000062ad8?, {0x100656a08?, 0x140003aa000?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa000}, 0x140003a0000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007c090?}, {0x100656a08, 0x140003aa000}, 0x140003a0000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400007e000, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63611: template: index.html:1: unexpected "content" in define clause
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000012320})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x14000426000}, {0x0, 0x0}, {0x140003729f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x14000426000}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000372ad8?, {0x100656a08?, 0x14000426000?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x14000426000}, 0x1400040c000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000402030?}, {0x100656a08, 0x14000426000}, 0x1400040c000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de0a0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63612: template: index.html:1: unexpected "content" in define clause
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000098410})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140000b40e0}, {0x0, 0x0}, {0x1400005e9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140000b40e0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400005ead8?, {0x100656a08?, 0x140000b40e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140000b40e0}, 0x1400009c300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094720?}, {0x100656a08, 0x140000b40e0}, 0x1400009c300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de140, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63613: template: index.html:1: unexpected "content" in define clause
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000012500})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa0e0}, {0x0, 0x0}, {0x140000629f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa0e0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000062ad8?, {0x100656a08?, 0x140003aa0e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa0e0}, 0x140003a0100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007c900?}, {0x100656a08, 0x140003aa0e0}, 0x140003a0100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400007e0a0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63614: template: index.html:1: unexpected "content" in define clause
+goroutine 84 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140000126e0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa1c0}, {0x0, 0x0}, {0x140000629f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa1c0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000062ad8?, {0x100656a08?, 0x140003aa1c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa1c0}, 0x140003a0200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007ce10?}, {0x100656a08, 0x140003aa1c0}, 0x140003a0200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400044c000, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63615: template: index.html:1: unexpected "content" in define clause
+goroutine 85 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000406270})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140004260e0}, {0x0, 0x0}, {0x140003729f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140004260e0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000372ad8?, {0x100656a08?, 0x140004260e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140004260e0}, 0x1400040c100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000402330?}, {0x100656a08, 0x140004260e0}, 0x1400040c100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400044c0a0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:52 server.go:3230: http: panic serving [::1]:63616: template: index.html:1: unexpected "content" in define clause
+goroutine 102 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140000128c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa2a0}, {0x0, 0x0}, {0x140000629f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa2a0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000062ad8?, {0x100656a08?, 0x140003aa2a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa2a0}, 0x140003a0300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007d380?}, {0x100656a08, 0x140003aa2a0}, 0x140003a0300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400007e140, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63617: template: index.html:1: unexpected "content" in define clause
+goroutine 60 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000406440})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140004261c0}, {0x0, 0x0}, {0x140000629f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140004261c0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000062ad8?, {0x100656a08?, 0x140004261c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140004261c0}, 0x140003a0400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007d890?}, {0x100656a08, 0x140004261c0}, 0x140003a0400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de1e0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63618: template: index.html:1: unexpected "content" in define clause
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000012aa0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa380}, {0x0, 0x0}, {0x1400005e9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa380}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400005ead8?, {0x100656a08?, 0x140003aa380?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa380}, 0x1400009c400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094de0?}, {0x100656a08, 0x140003aa380}, 0x1400009c400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de280, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63619: template: index.html:1: unexpected "content" in define clause
+goroutine 79 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000012b90})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a8c0}, {0x0, 0x0}, {0x140003769f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a8c0}, 0x14000376a3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000376ad8?, {0x100656a08?, 0x1400022a8c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a8c0}, 0x14000250b00)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400035ede0?}, {0x100656a08, 0x1400022a8c0}, 0x14000250b00)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002d2320, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63620: template: index.html:1: unexpected "content" in define clause
+goroutine 130 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x1400011b040})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa000}, {0x0, 0x0}, {0x140000639f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa000}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000063ad8?, {0x100656a08?, 0x140003aa000?}, 0x4?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa000}, 0x1400009c000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011c2d0?}, {0x100656a08, 0x140003aa000}, 0x1400009c000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de0a0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63621: template: index.html:1: unexpected "content" in define clause
+goroutine 131 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x1400011b210})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa0e0}, {0x0, 0x0}, {0x1400051a9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa0e0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400051aad8?, {0x100656a08?, 0x140003aa0e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa0e0}, 0x14000152000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094120?}, {0x100656a08, 0x140003aa0e0}, 0x14000152000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de140, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63622: template: index.html:1: unexpected "content" in define clause
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x1400011b3f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa1c0}, {0x0, 0x0}, {0x140005169f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa1c0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000516ad8?, {0x100656a08?, 0x140003aa1c0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa1c0}, 0x14000250000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007c090?}, {0x100656a08, 0x140003aa1c0}, 0x14000250000)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001380a0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63623: template: index.html:1: unexpected "content" in define clause
+goroutine 144 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140000981d0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a000}, {0x0, 0x0}, {0x1400005d9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a000}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400005dad8?, {0x100656a08?, 0x1400022a000?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a000}, 0x1400009c100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011c330?}, {0x100656a08, 0x1400022a000}, 0x1400009c100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de1e0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63624: template: index.html:1: unexpected "content" in define clause
+goroutine 145 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140000121d0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140001cc000}, {0x0, 0x0}, {0x140005169f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140001cc000}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000516ad8?, {0x100656a08?, 0x140001cc000?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140001cc000}, 0x14000152100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000095290?}, {0x100656a08, 0x140001cc000}, 0x14000152100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de320, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:53 server.go:3230: http: panic serving [::1]:63625: template: index.html:1: unexpected "content" in define clause
+goroutine 150 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140000983b0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a0e0}, {0x0, 0x0}, {0x1400005d9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a0e0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400005dad8?, {0x100656a08?, 0x1400022a0e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a0e0}, 0x1400009c200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d680?}, {0x100656a08, 0x1400022a0e0}, 0x1400009c200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002d2000, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:54 server.go:3230: http: panic serving [::1]:63630: template: index.html:1: unexpected "content" in define clause
+goroutine 155 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x1400011b5e0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa2a0}, {0x0, 0x0}, {0x1400051a9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa2a0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400051aad8?, {0x100656a08?, 0x140003aa2a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa2a0}, 0x14000152200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140000952f0?}, {0x100656a08, 0x140003aa2a0}, 0x14000152200)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002d2140, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:54 server.go:3230: http: panic serving [::1]:63631: template: index.html:1: unexpected "content" in define clause
+goroutine 156 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140000985a0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x1400022a1c0}, {0x0, 0x0}, {0x1400005d9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x1400022a1c0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400005dad8?, {0x100656a08?, 0x1400022a1c0?}, 0x4?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x1400022a1c0}, 0x1400009c300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011dc80?}, {0x100656a08, 0x1400022a1c0}, 0x1400009c300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140002d21e0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:54 server.go:3230: http: panic serving [::1]:63632: template: index.html:1: unexpected "content" in define clause
+goroutine 166 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x1400011b7c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140003aa460}, {0x0, 0x0}, {0x1400051a9f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140003aa460}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x1400051aad8?, {0x100656a08?, 0x140003aa460?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140003aa460}, 0x14000152300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000095890?}, {0x100656a08, 0x140003aa460}, 0x14000152300)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de3c0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:59 server.go:3230: http: panic serving [::1]:63653: template: index.html:1: unexpected "content" in define clause
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x140000123c0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140001cc0e0}, {0x0, 0x0}, {0x140005179f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140001cc0e0}, 0x127eacf3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000517ad8?, {0x100656a08?, 0x140001cc0e0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140001cc0e0}, 0x14000250400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007c720?}, {0x100656a08, 0x140001cc0e0}, 0x14000250400)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001381e0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:59 server.go:3230: http: panic serving [::1]:63654: template: index.html:1: unexpected "content" in define clause
+goroutine 178 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000012590})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140001cc1c0}, {0x0, 0x0}, {0x140005169f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140001cc1c0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000516ad8?, {0x100656a08?, 0x140001cc1c0?}, 0x4?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140001cc1c0}, 0x14000250100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007c6c0?}, {0x100656a08, 0x140001cc1c0}, 0x14000250100)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000138320, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
+2023/03/23 19:56:59 server.go:3230: http: panic serving [::1]:63655: template: index.html:1: unexpected "content" in define clause
+goroutine 187 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1850 +0xb0
+panic({0x1005f9ba0, 0x14000012770})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/text/template/helper.go:26
+go_todo_app/app/controllers.generateHTML({0x100656a08?, 0x140001cc2a0}, {0x0, 0x0}, {0x140005169f8?, 0x3, 0x800?})
+	/Users/enokoro/go/src/go_todo_app/app/controllers/server.go:21 +0xd0
+go_todo_app/app/controllers.index({0x100656a08, 0x140001cc2a0}, 0x127eace3b?)
+	/Users/enokoro/go/src/go_todo_app/app/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000516ad8?, {0x100656a08?, 0x140001cc2a0?}, 0x0?)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100656a08, 0x140001cc2a0}, 0x14000250500)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007d260?}, {0x100656a08, 0x140001cc2a0}, 0x14000250500)
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001383c0, {0x100656ea0, 0x1400011d2f0})
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.19.4/libexec/src/net/http/server.go:3102 +0x444
