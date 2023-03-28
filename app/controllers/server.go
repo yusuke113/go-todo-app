@@ -5,6 +5,8 @@ import (
 	"go_todo_app/app/models"
 	"go_todo_app/config"
 	"net/http"
+	"regexp"
+	"strconv"
 	"text/template"
 )
 
@@ -36,6 +38,41 @@ func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err e
 	return sess, err
 }
 
+var validPath = regexp.MustCompile("^/todos/(edit|update|delete)/([0-9]+)")
+
+// ParseUrlは、HTTPリクエストに対するURLのパースとバリデーションを行い、
+// ハンドラ関数をラップして返します。
+//
+// 引数:
+//   - fn: HTTPハンドラ関数。3つの引数を受け取り、何も返しません。
+//     第1引数にはResponseWriter、第2引数にはRequest、第3引数にはIDが渡されます。
+//
+// 戻り値:
+//   - http.HandlerFunc: ラップされたHTTPハンドラ関数。
+//
+// 動作:
+//   - リクエストURLを正規表現でバリデーションします。
+//   - URLが正しい場合、第3セグメントを数値に変換して第3引数に渡します。
+//   - ハンドラ関数を実行します。
+//   - URLが不正な場合、404 Not Foundを返します。
+func parseUrl(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		// /todos/edit/1
+		q := validPath.FindStringSubmatch(r.URL.Path)
+		if q == nil {
+			http.NotFound(w, r)
+			return
+		}
+		qi, err := strconv.Atoi(q[2])
+		if err != nil {
+			http.NotFound(w, r)
+			return
+		}
+
+		fn(w, r, qi)
+	}
+}
+
 // StartMainServer はメインのWebサーバーを開始する関数です。
 // config.Config.Staticに設定された静的ファイルをハンドリングし、
 // "/"、"/signup"、"/login"、"/authenticate"の各パスに対する処理を定義しています。
@@ -49,5 +86,10 @@ func StartMainServer() error {
 	http.HandleFunc("/authenticate", authenticate)
 	http.HandleFunc("/logout", logout)
 	http.HandleFunc("/todos", index)
+	http.HandleFunc("/todos/new", todoNew)
+	http.HandleFunc("/todos/save", todoSave)
+	http.HandleFunc("/todos/edit/", parseUrl(todoEdit))
+	http.HandleFunc("/todos/update/", parseUrl(todoUpdate))
+	http.HandleFunc("/todos/delete/", parseUrl(todoDelete))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
